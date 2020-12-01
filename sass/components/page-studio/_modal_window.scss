@@ -187,7 +187,7 @@
 
   &__label:focus-within > &__comments--name {
     transform: translateY(-32px);
-    color: $accent-color;
+    color: $title-text-color;
     cursor: pointer;
   }
 

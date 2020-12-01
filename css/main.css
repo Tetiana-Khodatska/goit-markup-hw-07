@@ -1400,7 +1400,7 @@ summary {
 .modal__label:focus-within > .modal__comments--name {
   -webkit-transform: translateY(-32px);
           transform: translateY(-32px);
-  color: #2196f3;
+  color: #757575;
   cursor: pointer;
 }
 
