@@ -1,0 +1,45 @@
+@import "./utils/variables";
+@import "./base/normalize";
+@import "./components/logo/logo";
+@import "./components/header/navigation";
+@import "./components/footer/footer";
+@import "./components/hero/hero";
+@import "./components/page-studio/characteristics";
+@import "./components/page-studio/work";
+@import "./components/page-studio/teams";
+@import "./components/page-studio/clients";
+@import "./components/page-studio/modal_window";
+@import "./components/page-portfolio/portfolio";
+@import "./components/logo/logo";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  box-sizing: inherit;
+}
+
+.list {
+  list-style: none;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.page-body {
+  color: &primary-text-color;
+  background-color: $primary-white-color;
+  font-family: $main-font;
+  padding: 0;
+  margin: 0;
+}

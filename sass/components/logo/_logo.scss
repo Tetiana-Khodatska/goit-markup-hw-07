@@ -1,0 +1,52 @@
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  &__link {
+    text-decoration: none;
+    margin-right: 93px;
+  }
+
+  &__web {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: $accent-color;
+    font-family: $logo-font;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+
+  &__studio {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: $logo-color;
+    font-family: $logo-font;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+
+  &__studio--white {
+    color: $primary-white-color;
+    font-weight: 700;
+    font-size: 26px;
+    padding: 0;
+
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+
+  &__web.list {
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+}

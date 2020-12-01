@@ -1,0 +1,203 @@
+.footer-color {
+  background-color: $footer-fon-color;
+}
+
+.container__footer {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 1200px;
+  display: flex;
+  align-items: baseline;
+  border-bottom: 1px solid var(--line-color);
+  text-decoration: none;
+
+  &--logo {
+    margin-right: 70px;
+  }
+
+  &--link {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.add {
+  display: inline-block;
+  margin-right: 93px;
+
+  &__title {
+    display: block;
+    margin-bottom: 20px;
+    color: $primary-white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}
+
+.add__social-site {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 44px;
+
+  &--item {
+    cursor: pointer;
+    background-color: $background-color;
+    border-radius: 50%;
+    transition: background-color $transitions;
+  }
+
+  &--item:not(:last-child) {
+    margin-right: 11px;
+  }
+
+  &--icon {
+    fill: $primary-white-color;
+  }
+
+  &--socials {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color $transitions;
+  }
+
+  &--item:hover {
+    background-color: $accent-color;
+  }
+
+  &--socials:focus {
+    background-color: $accent-color;
+    fill: $primary-white-color;
+  }
+}
+
+// adress
+.address__menu {
+  text-decoration: none;
+  list-style: none;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.address__list:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__street {
+  color: $primary-white-color;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 9px;
+}
+
+.address__mail {
+  color: $second-text-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 9px;
+}
+
+.address__tel {
+  color: $second-text-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Подпишись */
+.sign {
+  margin-left: auto;
+
+  &__title {
+    display: block;
+    margin-bottom: 20px;
+    color: $primary-white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__email {
+    min-width: 358px;
+    height: 50px;
+    padding: 16px 15px;
+
+    background-color: $footer-fon-color;
+    border: 1px solid $border-color;
+    box-shadow: 0px 4px 4px $border-color-shadow;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border 250ms $transitions;
+    outline: none;
+    align-items: center;
+    letter-spacing: 0.03em;
+    line-height: 1.87;
+  }
+
+  &__email:focus {
+    border: 1px solid $accent-color;
+  }
+
+  &__button {
+    display: flex;
+    border-width: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    cursor: pointer;
+
+    min-width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    color: $primary-white-color;
+    background-color: $accent-color;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.sign__form .sign__email + .sign__button {
+  margin-left: 12px;
+}
+
+.sign-link__icon {
+  margin-right: 13px;
+  margin-left: 10px;
+}

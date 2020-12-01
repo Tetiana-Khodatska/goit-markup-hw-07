@@ -1,0 +1,156 @@
+.container_header {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $line-color;
+}
+
+.navigation_menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style: none;
+
+  &__link::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $accent-color;
+    height: 4px;
+    border-radius: 2px;
+  }
+
+  &__studio,
+  &__portfolio {
+    position: relative;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__studio,
+  &__portfolio,
+  &__contact {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $primary-text-color;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+    transition: color $transitions;
+  }
+
+  &__studio:hover,
+  &__studio:focus {
+    color: $accent-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+  }
+
+  &__portfolio:hover,
+  &__portfolio:focus {
+    color: $accent-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+  }
+
+  &__contact:hover,
+  &__contact:focus {
+    color: $accent-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* mail+tel */
+
+.navigation-info {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__mail,
+  &__tel {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color $transitions;
+  }
+}
+
+.navigation_menu__studio.current,
+.navigation_menu__portfolio.current {
+  color: $accent-color;
+}
+
+.navigation-info__mail:hover,
+.navigation-info__mail:focus,
+.navigation-info__tel:hover,
+.navigation-info__tel:focus {
+  color: $accent-color;
+  fill: $accent-color;
+}
+
+.navigation-info__mail--item {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.navigation-info__item {
+  transition: fill $transitions;
+
+  &--phone {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
