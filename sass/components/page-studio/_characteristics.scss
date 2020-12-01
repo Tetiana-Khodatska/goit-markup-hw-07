@@ -1,0 +1,87 @@
+/* Characteristics */
+
+.characteristics {
+  &__container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 94px;
+    padding-top: 94px;
+    width: 1200px;
+
+    display: block;
+    align-items: center;
+    // border-bottom: 1px solid $line-color;
+  }
+
+  &__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+    margin-bottom: 50px;
+    color: $primary-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  &__list {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__subtitle {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-text-color;
+  }
+
+  &__text {
+    color: $title-text-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item--icon {
+    width: 270px;
+    height: 120px;
+    margin: auto;
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: $second-fon-color;
+  }
+}
+
+.characteristics__list .characteristics__item {
+  display: inline-block;
+  width: calc((100% - 90px) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

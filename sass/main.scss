@@ -37,7 +37,7 @@ a {
 }
 
 .page-body {
-  color: &primary-text-color;
+  color: $primary-text-color;
   background-color: $primary-white-color;
   font-family: $main-font;
   padding: 0;

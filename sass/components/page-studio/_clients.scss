@@ -1,0 +1,79 @@
+.clients {
+  border-bottom: 1px solid $line-color;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  border-bottom: 1px solid $line-color;
+  width: 1200px;
+}
+
+.clients__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: $primary-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.regular-clients {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__icon--client {
+    fill: currentColor;
+  }
+
+  &__icon--client.number_4 {
+    height: 45px;
+  }
+
+  &__icon--client.number_6 {
+    height: 45px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    width: calc((100% - 150px) / 6);
+    transition: border-color $transitions;
+  }
+
+  &__link {
+    color: #afb1b8;
+    width: 170px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $title-text-color;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: color $transitions, border-color $transitions;
+  }
+
+  &__link:hover {
+    color: $accent-color;
+    border-color: $accent-color;
+    border-radius: 4px;
+  }
+
+  &__link:focus {
+    width: 170px;
+    color: $accent-color;
+    border-color: $accent-color;
+    border-radius: 4px;
+  }
+}

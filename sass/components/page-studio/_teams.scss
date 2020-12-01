@@ -1,0 +1,137 @@
+/* employees */
+.team {
+  background-color: $second-fon-color;
+
+  &__container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 94px;
+    padding-top: 94px;
+    width: 1200px;
+    display: block;
+    align-items: center;
+    border-bottom: 1px solid $line-color;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+  }
+
+  &__name {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  &__job {
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+    color: $title-text-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  &__list {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 30px;
+    width: calc((100% - 90px) / 4);
+    text-align: center;
+    box-shadow: 0px 1px 3px$team-box-shadow-3, 0px 1px 1px $team-box-shadow-2,
+      0px 2px 1px $team-box-shadow-1;
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__list &__foto {
+    margin-bottom: 30px;
+  }
+}
+
+.team__socials {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+
+  &--list:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &--list {
+    content: "";
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color $transitions;
+  }
+
+  &--list:hover {
+    background-color: $accent-color;
+  }
+
+  &--page {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-team;
+    border-radius: 50%;
+    transition: color $transitions, background-color $transitions;
+  }
+
+  &--page--link {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+
+  &--page:hover {
+    color: $primary-white-color;
+  }
+
+  &--page:focus {
+    background-color: $accent-color;
+    color: $primary-white-color;
+  }
+}

@@ -3,63 +3,60 @@
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: linear-gradient($bg-line-gradient, $bg-line-gradient),
     url(../image/main_picture.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: var(--footer-fon-color);
-}
+  background-color: $footer-fon-color;
 
-.hero_container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-  height: 600px;
-  /* outline: 2px solid tomato; */
-  display: block;
-  align-items: center;
-  border-bottom: 1px solid var(--line-color);
-  text-align: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
-}
+  &__container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    height: 600px;
+    display: block;
+    align-items: center;
+    border-bottom: 1px solid $line-color;
+    text-align: center;
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
 
-.hero_title {
-  width: 646px;
-  margin-left: 270px;
-  margin-right: 270px;
-  margin-top: 0;
-  margin-bottom: 30px;
-  text-align: center;
+  &__title {
+    width: 646px;
+    margin-left: 270px;
+    margin-right: 270px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
 
-  color: var(--primary-white-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
+    color: $primary-white-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 
-.hero_button {
-  display: inline-block;
-  padding: 10px 32px;
-  min-width: 200px;
-  height: 50px;
-  border-radius: 4px;
+  &__button {
+    display: inline-block;
+    padding: 10px 32px;
+    min-width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: 0px;
 
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
+    color: $primary-white-color;
+    background-color: $accent-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+  }
 }
