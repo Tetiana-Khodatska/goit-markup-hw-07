@@ -226,15 +226,24 @@
     transition: background-color $transitions, border-color $transitions;
   }
 
-  &__agreement:focus-within > &__custom--check {
+  // &__agreement--check:checked + &__custom--check {
+  //   background-image: url(../image/tick.svg);
+  //   background-color: $accent-color;
+  //   // border-color: $accent-color;
+  //   cursor: pointer;
+  // }
+
+  // &__agreement:checked + &__custom--check {
+  //   background-image: url(../image/tick.svg);
+  //   background-color: $accent-color;
+  //   // border-color: $accent-color;
+  //   cursor: pointer;
+  // }
+
+  &__agreement:checked > &__custom--check {
     background-image: url(../image/tick.svg);
     background-color: $accent-color;
     cursor: pointer;
-  }
-
-  &__agreement--check:checked + &__custom--check {
-    background-color: $accent-color;
-    border-color: $accent-color;
   }
 
   &__conditions {
